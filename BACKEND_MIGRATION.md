@@ -1,6 +1,6 @@
 # Overview
 
-In December 2022, ImageAI `3.0.0` was released which effected the change from Tensorflow backend to PyTorch backend. This change allows ImageAI to support `Python 3.7` up to `Python 3.10` for all its features and deprecates a number of functionalities for this and future versions of ImageAI.
+In December 2022, ImageAI `3.0.2` was released which effected the change from Tensorflow backend to PyTorch backend. This change allows ImageAI to support `Python 3.7` up to `Python 3.10` for all its features and deprecates a number of functionalities for this and future versions of ImageAI.
 
 
 # Deprecated functionalities
@@ -30,11 +30,11 @@ To use Tensorflow backend, do the following
 Because ImageAI now uses `YOLO format` for training custom object detection models; should you need to train a new model with the new ImageAI version, you will need to convert your `Pascal VOC` datasets to YOLO format by doing the following 
 - Run the command below
     ```
-    python scripts/pascal_voc_to_yolo.py.py --dataset_dir <path_to_your_dataset_folder>
+    python scripts/pascal_voc_to_yolo.py --dataset_dir <path_to_your_dataset_folder>
     ```
 - Once completed, you will find the YOLO version of the dataset next to your Pascal VOC dataset.
   - E.g, if your dataset is in `C:/Users/Troublemaker/Documents/datasets/headset`, your conversion command will be
     ```
-    python scripts/pascal_voc_to_yolo.py.py --dataset_dir C:/Users/Troublemaker/Documents/datasets/headset
+    python scripts/pascal_voc_to_yolo.py --dataset_dir C:/Users/Troublemaker/Documents/datasets/headset
     ```
     and once completed, the output will be in `C:/Users/Troublemaker/Documents/datasets/headset-yolo`

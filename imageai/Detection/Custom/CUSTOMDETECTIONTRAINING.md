@@ -46,7 +46,7 @@ You will prepare the images as follows:
      ```
 8. You can train your custom detection model completely from scratch or use transfer learning (recommended for better accuracy) from a pre-trained YOLOv3 model. Also, we have provided a sample annotated Hololens and Headsets (Hololens and Oculus) dataset for you to train with. Download the pre-trained YOLOv3 model and the sample datasets in the link below.  
 
-[hololens-yolo.zip](https://github.com/OlafenwaMoses/ImageAI/releases/download/test-resources-v3/hololens-yolo.zip)
+Download dataset `hololens-yolo.zip` [here](https://github.com/OlafenwaMoses/ImageAI/releases/tag/test-resources-v3) and pre-trained model `yolov3.pt`  [here](https://github.com/OlafenwaMoses/ImageAI/releases/tag/3.0.0-pretrained)
 
 
 ### Training on your custom dataset
@@ -172,7 +172,6 @@ Validation:
 - For each experiment (Epoch), a number of metrics are computed. The important once fo chosing an accuate models is detailed below
   - The bounding box loss `box loss` is reported and expected to drop as the training progresses
   - The object localization loss  `object loss` is reported and expected to drop as the training progresses
-  - The class loss  `class loss` is reported and expected to drop as the training progresses. If the class loss persists at 0.0000, it's because your dataset has a single class.
   - The class loss  `class loss` is reported and expected to drop as the training progresses. If the class loss persists at 0.0000, it's because your dataset has a single class.
   - The `mAP50` and `mAP0.5-0.95` metrics are expected to increase. This signifies the models accuracy increases. There might be flunctuations in these metrics sometimes.
 - For each increase in the `mAP50`  after an experiment, a model is saved in the **hololens-yolo/models** folder. The higher the mAP50, the better the model. 
